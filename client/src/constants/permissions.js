@@ -1,0 +1,108 @@
+/**
+ * Client System Permissions Constants - Phase 6
+ * Grouped permission definitions with Hindi and English titles and descriptions
+ */
+export const PERMISSION_GROUPS = [
+  {
+    groupId: 'financial',
+    title: 'वित्तीय प्रबंधन (Financials - Phase 3)',
+    permissions: [
+      { id: 'DONATION_VIEW', label: 'दान अवलोकन (View Donations)' },
+      { id: 'DONATION_CREATE', label: 'दान प्रविष्टि (Create Donations)' },
+      { id: 'DONATION_UPDATE', label: 'दान संपादन (Edit Donations)' },
+      { id: 'DONATION_VERIFY', label: 'दान सत्यापन (Verify/Approve Donations)' },
+      { id: 'DONATION_ARCHIVE', label: 'दान निरस्तीकरण (Archive Donations)' },
+      { id: 'INCOME_VIEW', label: 'आय अवलोकन (View Income)' },
+      { id: 'INCOME_CREATE', label: 'आय प्रविष्टि (Create Income)' },
+      { id: 'INCOME_UPDATE', label: 'आय संपादन (Edit Income)' },
+      { id: 'INCOME_ARCHIVE', label: 'आय निरस्तीकरण (Archive Income)' },
+      { id: 'EXPENSE_VIEW', label: 'व्यय अवलोकन (View Expenses)' },
+      { id: 'EXPENSE_CREATE', label: 'व्यय प्रविष्टि (Create Expenses)' },
+      { id: 'EXPENSE_UPDATE', label: 'व्यय संपादन (Edit Expenses)' },
+      { id: 'EXPENSE_ARCHIVE', label: 'व्यय निरस्तीकरण (Archive Expenses)' },
+      { id: 'FINANCIAL_REPORT_VIEW', label: 'वित्तीय रिपोर्ट (View Financial Reports)' },
+      { id: 'FINANCIAL_EXPORT', label: 'वित्तीय निर्यात (Export Financial CSV)' },
+    ],
+  },
+  {
+    groupId: 'temple_cms',
+    title: 'मंदिर सामग्री व सूचनाएं (Temple CMS & Notices - Phase 4)',
+    permissions: [
+      { id: 'TEMPLE_INFO_VIEW', label: 'मंदिर परिचय देखना (View Temple Info)' },
+      { id: 'TEMPLE_INFO_MANAGE', label: 'मंदिर परिचय संपादन (Manage Temple Info)' },
+      { id: 'TEMPLE_RULE_VIEW', label: 'मंदिर नियम देखना (View Temple Rules)' },
+      { id: 'TEMPLE_RULE_MANAGE', label: 'मंदिर नियम संपादन (Manage Temple Rules)' },
+      { id: 'NOTICE_VIEW', label: 'सूचनाएं देखना (View Notices)' },
+      { id: 'NOTICE_CREATE', label: 'सूचना बनाना (Create Notices)' },
+      { id: 'NOTICE_UPDATE', label: 'सूचना संपादन (Edit Notices)' },
+      { id: 'NOTICE_PUBLISH', label: 'सूचना प्रकाशित करना (Publish Notices)' },
+      { id: 'NOTICE_DELETE', label: 'सूचना हटाना (Delete Notices)' },
+    ],
+  },
+  {
+    groupId: 'gallery',
+    title: 'फोटो व वीडियो गैलरी (Gallery Media - Phase 4)',
+    permissions: [
+      { id: 'GALLERY_VIEW', label: 'गैलरी देखना (View Gallery)' },
+      { id: 'GALLERY_ALBUM_CREATE', label: 'एल्बम बनाना (Create Albums)' },
+      { id: 'GALLERY_ALBUM_UPDATE', label: 'एल्बम संपादन (Edit Albums)' },
+      { id: 'GALLERY_ALBUM_DELETE', label: 'एल्बम हटाना (Delete Albums)' },
+      { id: 'GALLERY_MEDIA_UPLOAD', label: 'मीडिया अपलोड (Upload Photos/Videos)' },
+      { id: 'GALLERY_MEDIA_UPDATE', label: 'मीडिया संपादन (Update Media Info)' },
+      { id: 'GALLERY_MEDIA_DELETE', label: 'मीडिया हटाना (Delete Media)' },
+      { id: 'GALLERY_PUBLISH', label: 'गैलरी प्रकाशित करना (Publish Media)' },
+    ],
+  },
+  {
+    groupId: 'yatra',
+    title: 'यात्रा प्रबंधन (Yatra Management - Phase 5)',
+    permissions: [
+      { id: 'YATRA_VIEW', label: 'यात्रा सूची देखना (View Registrations)' },
+      { id: 'YATRA_CREATE', label: 'यात्रा पंजीकरण (Create Registrations)' },
+      { id: 'YATRA_UPDATE', label: 'पंजीकरण संपादन (Edit Registrations)' },
+      { id: 'YATRA_CONFIRM', label: 'पंजीकरण पुष्टि (Confirm Registrations)' },
+      { id: 'YATRA_CANCEL', label: 'पंजीकरण निरस्त (Cancel Registrations)' },
+      { id: 'YATRA_PAYMENT_VIEW', label: 'भुगतान देखना (View Payments)' },
+      { id: 'YATRA_PAYMENT_CREATE', label: 'भुगतान दर्ज करना (Record Payments)' },
+      { id: 'YATRA_EXPORT', label: 'यात्रा डेटा निर्यात (Export CSV)' },
+      { id: 'YATRA_REPORT_VIEW', label: 'यात्रा रिपोर्ट (View Yatra Reports)' },
+      { id: 'YATRA_INFO_MANAGE', label: 'यात्रा दिशा-निर्देश (Manage Yatra Info)' },
+    ],
+  },
+  {
+    groupId: 'puja',
+    title: 'वार्षिक पूजा रिकॉर्ड (Puja Management - Phase 6)',
+    permissions: [
+      { id: 'PUJA_VIEW', label: 'पूजा रिकॉर्ड देखना (View Puja Records)' },
+      { id: 'PUJA_CREATE', label: 'पूजा रिकॉर्ड प्रविष्टि (Create Puja Records)' },
+      { id: 'PUJA_UPDATE', label: 'पूजा रिकॉर्ड संपादन (Edit Puja Records)' },
+      { id: 'PUJA_ARCHIVE', label: 'पूजा रिकॉर्ड निरस्त (Archive Puja Records)' },
+      { id: 'PUJA_REPORT_VIEW', label: 'पूजा सांख्यिकी रिपोर्ट (View Puja Reports)' },
+      { id: 'PUJA_EXPORT', label: 'पूजा डेटा निर्यात (Export Puja CSV)' },
+      { id: 'PUJA_MANAGE', label: 'संपूर्ण पूजा नियंत्रण (Full Puja Manage)' },
+    ],
+  },
+  {
+    groupId: 'restricted',
+    title: 'सुरक्षा व प्रतिबंध रिकॉर्ड (Restricted Records - Phase 6 - PRIVATE)',
+    permissions: [
+      { id: 'RESTRICTED_VIEW', label: 'प्रतिबंधित सूची देखना (View Restricted Persons)' },
+      { id: 'RESTRICTED_CREATE', label: 'प्रतिबंध प्रविष्टि जोड़ना (Add Restricted Person)' },
+      { id: 'RESTRICTED_UPDATE', label: 'प्रतिबंध संपादन (Edit Restricted Details)' },
+      { id: 'RESTRICTED_REVOKE', label: 'प्रतिबंध निरस्तीकरण (Revoke / Pardon)' },
+      { id: 'RESTRICTED_EXPORT', label: 'प्रतिबंधित सूची निर्यात (Export Restricted CSV)' },
+    ],
+  },
+  {
+    groupId: 'users',
+    title: 'सदस्य व समिति प्रबंधन (Committee & User Management - Phase 6)',
+    permissions: [
+      { id: 'USER_VIEW', label: 'उपयोगकर्ता सूची देखना (View Users)' },
+      { id: 'USER_CREATE', label: 'समिति सदस्य जोड़ना (Pre-provision Committee Member)' },
+      { id: 'USER_UPDATE', label: 'उपयोगकर्ता संपादन (Edit User Details)' },
+      { id: 'USER_DEACTIVATE', label: 'खाता सक्रिय/निष्क्रिय करना (Toggle Status)' },
+      { id: 'USER_PERMISSIONS_MANAGE', label: 'अनुमतियां नियंत्रित करना (Manage Permissions Matrix)' },
+      { id: 'COMMITTEE_MANAGE', label: 'समिति संपूर्ण प्रबंधन (Committee Master Management)' },
+    ],
+  },
+];

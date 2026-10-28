@@ -1,0 +1,26 @@
+{
+  "name": "jadam-kuldevi-mandir",
+  "version": "1.0.0",
+  "description": "जादम परिवार कुलदेवी मंदिर, खलघाट - Full Stack MERN Application Foundation",
+  "private": true,
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently --kill-others-on-fail --names \"SERVER,CLIENT\" --prefix-colors \"yellow,cyan\" \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "mern",
+    "mandir",
+    "temple-management",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Jadam Parivar",
+  "license": "ISC"
+}
